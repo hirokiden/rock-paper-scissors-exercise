@@ -18,13 +18,23 @@
 # CAPTURE INPUTS
 
 
-user_choice = input("Please choose one of the following: 'rock', 'paper', or 'scissor'")
+user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes):")
 
-print("USER CHOICE IS:", user_choice)
+print("--------------")
+print("USER CHOICE:", user_choice)
 
 # VALIDATE INPUTS
 
+
+if user_choice not in ["rock", "paper", "scissors"]:
+    print("INVALID SELECTION, PLEASE TRY AGAIN...")
+    exit()
+
+
+
 # GENERATE COMPUTER SELECTION
+
+print("GENERATING...")
 
 # DETERMINE THE WINNER
 
