@@ -13,6 +13,8 @@
 
 
 
+# Modules/Packages that you need to import
+import random
 
 
 # CAPTURE INPUTS
@@ -34,8 +36,19 @@ if user_choice not in ["rock", "paper", "scissors"]:
 
 # GENERATE COMPUTER SELECTION
 
+
+
+pc_list = ["rock", "paper", "scissors"]
+
+pc_random_choice = random.choice(pc_list)
+
+print("--------------")
 print("GENERATING...")
+print("PC CHOICE:", pc_random_choice)
+
 
 # DETERMINE THE WINNER
+
+
 
 # DISPLAY FINAL OUTPUTS / OUTCOMES
