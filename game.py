@@ -19,6 +19,7 @@ import random
 
 # CAPTURE INPUTS
 
+potential_choice = ["rock", "paper", "scissors"]
 
 user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes):")
 
@@ -28,7 +29,7 @@ print("USER CHOICE:", user_choice)
 # VALIDATE INPUTS
 
 
-if user_choice not in ["rock", "paper", "scissors"]:
+if user_choice not in potential_choice:
     print("INVALID SELECTION, PLEASE TRY AGAIN...")
     exit()
 
@@ -38,9 +39,7 @@ if user_choice not in ["rock", "paper", "scissors"]:
 
 
 
-pc_list = ["rock", "paper", "scissors"]
-
-pc_random_choice = random.choice(pc_list)
+pc_random_choice = random.choice(potential_choice)
 
 print("--------------")
 print("GENERATING...")
