@@ -48,6 +48,25 @@ print("PC CHOICE:", pc_random_choice)
 
 # DETERMINE THE WINNER
 
+if user_choice == pc_random_choice:
+    print("The Game is a tie")
+elif user_choice == "rock" and pc_random_choice == "paper":
+    print("Paper is the winner, you lose")
+elif user_choice == "paper" and pc_random_choice == "scissors":
+    print("Scissors is the winner, you lose")
+elif user_choice == "scissors" and pc_random_choice == "rock":
+    print("Rock is the winner, you lose")
+elif user_choice == "rock" and pc_random_choice == "scissors":
+    print("Rock is the winner, you win")
+elif user_choice == "paper" and pc_random_choice == "rock":
+    print("Paper is the winner, you win")
+elif user_choice == "scissors" and pc_random_choice == "paper":
+    print("Scissors is the winner, you win")
+
+# Rock beats scissors
+# Paper beats Rock
+# Scissors beats Paper 
+# Same selection is a tie
 
 
 # DISPLAY FINAL OUTPUTS / OUTCOMES
