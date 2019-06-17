@@ -16,6 +16,11 @@
 # Modules/Packages that you need to import
 import random
 
+def my_message():
+    return "HELLO"
+
+x = my_message
+
 
 # CAPTURE INPUTS
 
